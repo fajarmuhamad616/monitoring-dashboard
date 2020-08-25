@@ -1,0 +1,50 @@
+.mdl-layout__content{
+    background-color: #F0F2F5;
+}
+.mdl-layout__content{
+    display: inherit;
+}
+#curve_chart_harian{
+    width: 437px;
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 30px;
+    overflow: hidden;
+    display: inline-grid;
+    border-radius: 20px;
+}
+#curve_chart_bulanan{
+    width: 437px;
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 30px;
+    overflow: hidden;
+    display: inline-grid;
+    border-radius: 20px;
+}
+#curve_chart_tahunan{
+    width: 904px;
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 30px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.sidebar{
+    width: 25%;
+    float: right;
+    margin-top: 100px;
+    margin-right: 30px;
+    height: auto;
+}
+.peringkat-kelurahan{
+    padding: 15px 20px;
+    background-color: white;
+}
+span.title-peringkat{
+    font-weight: bold;
+    text-align: left;
+}
+.list-peringkat{
+    background-color: #00B894;
+}
