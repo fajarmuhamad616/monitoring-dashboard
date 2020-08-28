@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+      <!-- Pengaturan META -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- Link -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="css/material.teal-green.min.css" />
+      <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+          <!-- Header -->
+          <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+              <span class="mdl-layout-title">Dashboard</span>
+              <div class="mdl-layout-spacer"></div>
+              <!--Tombol Pencarian-->
+              <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+                <i class="material-icons">search</i>
+              </label>
+              <!--Tombol Profil-->
+              <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                <i class="material-icons">account_circle</i>
+              </button>
+              <!--Tombol More-->
+              <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+                <li class="mdl-menu__item">Log Out</li>
+              </ul>
+            </div>
+          </header>
+          
+          <!-- Sidebar -->
+          <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Title</span>
+            <nav class="mdl-navigation">
+              <a class="mdl-navigation__link" href="">Link</a>
+              <a class="mdl-navigation__link" href="">Link</a>
+              <a class="mdl-navigation__link" href="">Link</a>
+              <a class="mdl-navigation__link" href="">Link</a>
+            </nav>
+          </div>
+        </div>
+        
+        <!-- Konten -->
+        <main class="mdl-layout__content">
+          <div class="page-content">
+            <aside class="sidebar">
+              <div class="peringkat-kelurahan">
+                <span class="title-peringkat">Peringkat kelurahan</span>
+              </div>
+                    <div class="list-peringkat">
+                    </div>
+            </aside>
+
+            <!-- Chartnya -->
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div id="curve_chart_harian"></div>
+                </div>
+                <div class="col">
+                  <div id="curve_chart_bulanan"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div id="curve_chart_tahunan"></div>
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+        </main>
+        <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="js/monitoring_harian.js"></script>
+        <script src="js/monitoring_bulanan.js"></script>
+        <script src="js/monitoring_tahunan.js"></script>
+      </body>
+</html>
+
