@@ -3,11 +3,11 @@ google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
   var data = google.visualization.arrayToDataTable([
-    ['Bulan', 'Sales', 'Expenses'],
-    ['Jan',  1000,      400],
-    ['Feb',  1170,      460],
-    ['Mar',  660,       1120],
-    ['Apr',  1030,      540]
+    ['Day', 'Sales', 'Expenses'],
+    ['1',  1200,      405],
+    ['2',  1170,      460],
+    ['3',  660,       1230],
+    ['4',  1030,      540]
   ]);
 
   var options = {
@@ -18,7 +18,7 @@ function drawChart() {
     height: 200,
   };
 
-  var chart = new google.visualization.LineChart(document.getElementById('curve_chart_bulanan'));
+  var chart = new google.visualization.LineChart(document.getElementById('curve_chart_mingguan'));
 
   chart.draw(data, options);
 }
@@ -26,4 +26,3 @@ function drawChart() {
 $(window).resize(function(){
   drawChart();
 });
- 
