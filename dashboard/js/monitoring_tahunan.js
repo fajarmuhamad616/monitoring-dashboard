@@ -3,24 +3,22 @@ google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
   var data = google.visualization.arrayToDataTable([
-    ['Bulan', 'Berhasil', 'Gagal'],
-    ['Jan',  100,      40],
-    ['Feb',  117,      46],
-    ['Mar',  360,       112],
-    ['Apr',  103,      54],
-    ['Mei',  250,      62],
-    ['Jun',  128,      54],
+    ['Tahun', 'Berhasil', 'Gagal'],
+    ['2017',  12000,      1323],
+    ['2018',  12170,      213],
+    ['2019',  6260,       1120],
+    ['2020',  13030,      540]
   ]);
 
   var options = {
-    title: 'Grafik Hasil Panen (Bulan)',
+    title: 'Grafik Hasil Panen (Tahun)',
     curveType: 'function',
     legend: { position: 'bottom' },
     width: 320,
     height: 200,
   };
 
-  var chart = new google.visualization.LineChart(document.getElementById('curve_chart_bulanan'));
+  var chart = new google.visualization.LineChart(document.getElementById('curve_chart_tahunan'));
 
   chart.draw(data, options);
 }
@@ -28,4 +26,3 @@ function drawChart() {
 $(window).resize(function(){
   drawChart();
 });
- 
